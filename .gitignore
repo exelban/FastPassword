@@ -1,0 +1,10 @@
+.DS_Store
+
+build
+xcuserdata
+
+FastPassword.dmg
+FastPassword.app
+create-dmg
+dSYMs.zip
+FastPassword.dmg.zip

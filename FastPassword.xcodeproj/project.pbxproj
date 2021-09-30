@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A270C0C26E542CE00477212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A270C0B26E542CE00477212 /* AppDelegate.swift */; };
+		9A270C1026E542CE00477212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A270C0F26E542CE00477212 /* Assets.xcassets */; };
+		9A270C7126E549A400477212 /* view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A270C7026E549A400477212 /* view.swift */; };
+		9A2F771B2706166900E070D7 /* Updater in Frameworks */ = {isa = PBXBuildFile; productRef = 9A2F771A2706166900E070D7 /* Updater */; };
+		9A7CB2A226E6BDB5002A9E33 /* generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7CB2A126E6BDB5002A9E33 /* generator.swift */; };
+		9A886A7E26E7FB050093B530 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A886A7D26E7FB050093B530 /* utils.swift */; };
+		9A886A9E26E806A50093B530 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A886A9D26E806A50093B530 /* main.swift */; };
+		9A886AA426E807620093B530 /* LaunchAtLogin.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A886A8726E8067E0093B530 /* LaunchAtLogin.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A886AA326E8075A0093B530 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				9A886AA426E807620093B530 /* LaunchAtLogin.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9A270C0826E542CE00477212 /* FastPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A270C0B26E542CE00477212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A270C0F26E542CE00477212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A270C1726E542CE00477212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A270C1826E542CE00477212 /* FastPassword.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FastPassword.entitlements; sourceTree = "<group>"; };
+		9A270C7026E549A400477212 /* view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view.swift; sourceTree = "<group>"; };
+		9A7CB2A126E6BDB5002A9E33 /* generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generator.swift; sourceTree = "<group>"; };
+		9A886A7D26E7FB050093B530 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		9A886A8726E8067E0093B530 /* LaunchAtLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchAtLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A886A9226E8067E0093B530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A886A9326E8067E0093B530 /* LaunchAtLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchAtLogin.entitlements; sourceTree = "<group>"; };
+		9A886A9D26E806A50093B530 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A270C0526E542CE00477212 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2F771B2706166900E070D7 /* Updater in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A886A8426E8067E0093B530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A270BFF26E542CE00477212 = {
+			isa = PBXGroup;
+			children = (
+				9A270C0A26E542CE00477212 /* FastPassword */,
+				9A886A8826E8067E0093B530 /* LaunchAtLogin */,
+				9A270C0926E542CE00477212 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A270C0926E542CE00477212 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A270C0826E542CE00477212 /* FastPassword.app */,
+				9A886A8726E8067E0093B530 /* LaunchAtLogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A270C0A26E542CE00477212 /* FastPassword */ = {
+			isa = PBXGroup;
+			children = (
+				9A270C2026E5432100477212 /* Supporting Files */,
+				9A270C0B26E542CE00477212 /* AppDelegate.swift */,
+				9A270C7026E549A400477212 /* view.swift */,
+				9A7CB2A126E6BDB5002A9E33 /* generator.swift */,
+				9A886A7D26E7FB050093B530 /* utils.swift */,
+			);
+			path = FastPassword;
+			sourceTree = "<group>";
+		};
+		9A270C2026E5432100477212 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A270C1826E542CE00477212 /* FastPassword.entitlements */,
+				9A270C1726E542CE00477212 /* Info.plist */,
+				9A270C0F26E542CE00477212 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A886A8826E8067E0093B530 /* LaunchAtLogin */ = {
+			isa = PBXGroup;
+			children = (
+				9A886A9D26E806A50093B530 /* main.swift */,
+				9A886A9226E8067E0093B530 /* Info.plist */,
+				9A886A9326E8067E0093B530 /* LaunchAtLogin.entitlements */,
+			);
+			path = LaunchAtLogin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A270C0726E542CE00477212 /* FastPassword */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A270C1B26E542CE00477212 /* Build configuration list for PBXNativeTarget "FastPassword" */;
+			buildPhases = (
+				9A270C0426E542CE00477212 /* Sources */,
+				9A270C0526E542CE00477212 /* Frameworks */,
+				9A270C0626E542CE00477212 /* Resources */,
+				9A886AA326E8075A0093B530 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastPassword;
+			packageProductDependencies = (
+				9A2F771A2706166900E070D7 /* Updater */,
+			);
+			productName = FastPassword;
+			productReference = 9A270C0826E542CE00477212 /* FastPassword.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A886A8626E8067E0093B530 /* LaunchAtLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A886A9426E8067E0093B530 /* Build configuration list for PBXNativeTarget "LaunchAtLogin" */;
+			buildPhases = (
+				9A886A8326E8067E0093B530 /* Sources */,
+				9A886A8426E8067E0093B530 /* Frameworks */,
+				9A886A8526E8067E0093B530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaunchAtLogin;
+			productName = LaunchAtLogin;
+			productReference = 9A886A8726E8067E0093B530 /* LaunchAtLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A270C0026E542CE00477212 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9A270C0726E542CE00477212 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					9A886A8626E8067E0093B530 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = 9A270C0326E542CE00477212 /* Build configuration list for PBXProject "FastPassword" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A270BFF26E542CE00477212;
+			packageReferences = (
+				9A2F77192706166900E070D7 /* XCRemoteSwiftPackageReference "updater" */,
+			);
+			productRefGroup = 9A270C0926E542CE00477212 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A270C0726E542CE00477212 /* FastPassword */,
+				9A886A8626E8067E0093B530 /* LaunchAtLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A270C0626E542CE00477212 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A270C1026E542CE00477212 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A886A8526E8067E0093B530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A270C0426E542CE00477212 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A270C0C26E542CE00477212 /* AppDelegate.swift in Sources */,
+				9A7CB2A226E6BDB5002A9E33 /* generator.swift in Sources */,
+				9A270C7126E549A400477212 /* view.swift in Sources */,
+				9A886A7E26E7FB050093B530 /* utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A886A8326E8067E0093B530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A886A9E26E806A50093B530 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9A270C1926E542CE00477212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A270C1A26E542CE00477212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9A270C1C26E542CE00477212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FastPassword/Supporting Files/FastPassword.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = RP2S87B72W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FastPassword/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.serhiy.FastPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9A270C1D26E542CE00477212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FastPassword/Supporting Files/FastPassword.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = RP2S87B72W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FastPassword/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.serhiy.FastPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9A886A9526E8067E0093B530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LaunchAtLogin/LaunchAtLogin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RP2S87B72W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = LaunchAtLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.serhiy.FastPassword.LaunchAtLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9A886A9626E8067E0093B530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LaunchAtLogin/LaunchAtLogin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RP2S87B72W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = LaunchAtLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.serhiy.FastPassword.LaunchAtLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A270C0326E542CE00477212 /* Build configuration list for PBXProject "FastPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A270C1926E542CE00477212 /* Debug */,
+				9A270C1A26E542CE00477212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A270C1B26E542CE00477212 /* Build configuration list for PBXNativeTarget "FastPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A270C1C26E542CE00477212 /* Debug */,
+				9A270C1D26E542CE00477212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A886A9426E8067E0093B530 /* Build configuration list for PBXNativeTarget "LaunchAtLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A886A9526E8067E0093B530 /* Debug */,
+				9A886A9626E8067E0093B530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A2F77192706166900E070D7 /* XCRemoteSwiftPackageReference "updater" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exelban/updater";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A2F771A2706166900E070D7 /* Updater */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A2F77192706166900E070D7 /* XCRemoteSwiftPackageReference "updater" */;
+			productName = Updater;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9A270C0026E542CE00477212 /* Project object */;
+}
