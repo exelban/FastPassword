@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Webp.net-resizeimage-2.png",
+      "filename" : "outline_key_white_18pt_1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "outline_key_white_18pt_2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "outline_key_white_18pt_3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
