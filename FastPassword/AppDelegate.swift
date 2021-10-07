@@ -17,7 +17,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private let window: Window = Window()
     private var menuBarItem: MenuBar = MenuBar()
     
-    private let updater = Updater(name: "FastPassword", providers: [Updater.Github(user: "exelban", repo: "FastPassword", asset: "FastPassword.dmg")])
+    private let isAppStoreBuild: Bool = true
+    
+    private let updater = Updater(
+        name: "FastPassword",
+        providers: [
+            Updater.Github(user: "exelban", repo: "FastPassword", asset: "FastPassword.dmg")
+        ]
+    )
     
     static func main() {
         let delegate = AppDelegate()
@@ -26,12 +33,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        if !Store.shared.exist(key: "runAtLoginInitialized") {
-            Store.shared.set(key: "runAtLoginInitialized", value: true)
-            LaunchAtLogin.isEnabled = true
+        let startingPoint = Date()
+        
+        if !self.isAppStoreBuild {
+            if !Store.shared.exist(key: "runAtLoginInitialized") {
+                Store.shared.set(key: "runAtLoginInitialized", value: true)
+                LaunchAtLogin.isEnabled = true
+            }
+            
+            self.checkForNewVersion()
         }
         
-        self.checkForNewVersion()
+        print("FastPassword started in \((startingPoint.timeIntervalSinceNow * -1).rounded(toPlaces: 4)) seconds")
     }
     
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
@@ -40,6 +53,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         } else {
             self.window.setIsVisible(true)
         }
+        NSApp.setActivationPolicy(.regular)
+        
         return true
     }
     
@@ -119,6 +134,7 @@ private class Window: NSWindow, NSWindowDelegate {
         self.titlebarAppearsTransparent = true
         self.center()
         self.setIsVisible(self.windowOnStart)
+        self.delegate = self
         
         let windowController = NSWindowController()
         windowController.window = self
@@ -166,7 +182,7 @@ private class MenuBar {
         
         if let button = self.item.button {
             button.image = NSImage(named: NSImage.Name("icon"))
-            button.imageScaling = .scaleProportionallyDown
+            button.imageScaling = .scaleNone
             button.target = self
             button.sendAction(on: [.leftMouseDown, .rightMouseDown])
             button.action = #selector(self.togglePopover)
