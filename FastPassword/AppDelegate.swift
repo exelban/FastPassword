@@ -17,7 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private let window: Window = Window()
     private var menuBarItem: MenuBar = MenuBar()
     
-    private let isAppStoreBuild: Bool = true
+    private let isAppStoreBuild: Bool = false
     
     private let updater = Updater(
         name: "FastPassword",
