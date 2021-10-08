@@ -28,6 +28,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     static func main() {
         let delegate = AppDelegate()
+        let menu = AppMenu()
+        NSApplication.shared.mainMenu = menu
         NSApplication.shared.delegate = delegate
         NSApplication.shared.run()
     }
@@ -141,6 +143,7 @@ private class Window: NSWindow, NSWindowDelegate {
         windowController.loadWindow()
         
         if self.windowOnStart {
+            NSApp.setActivationPolicy(.regular)
             self.makeKeyAndOrderFront(nil)
         }
         
@@ -166,6 +169,10 @@ private class Window: NSWindow, NSWindowDelegate {
         }
         
         return super.performKeyEquivalent(with: event)
+    }
+    
+    func windowWillClose(_ notification: Notification) {
+        NSApplication.shared.setActivationPolicy(.accessory)
     }
 }
 
@@ -213,5 +220,26 @@ private class MenuBar {
                 self.popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
             }
         }
+    }
+}
+
+class AppMenu: NSMenu {
+    private lazy var applicationName = ProcessInfo.processInfo.processName
+    
+    override init(title: String) {
+        super.init(title: title)
+        
+        let mainMenu = NSMenuItem()
+        mainMenu.submenu = NSMenu(title: "MainMenu")
+        mainMenu.submenu?.items = [
+            NSMenuItem(title: "About \(applicationName)", action: #selector(NSApplication.orderFrontStandardAboutPanel(_:)), keyEquivalent: ""),
+            NSMenuItem.separator(),
+            NSMenuItem(title: "Quit \(applicationName)", action: #selector(NSApplication.shared.terminate(_:)), keyEquivalent: "q")
+        ]
+        items = [mainMenu]
+    }
+    
+    required init(coder: NSCoder) {
+        super.init(coder: coder)
     }
 }
